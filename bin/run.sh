@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Move to the folder where ep-lite is installed
-cd `dirname $0`
+cd /home/yuwang/Documents/Projects/etherpad-lite
 
 #Was this script started in the bin folder? if yes move out
 if [ -d "../bin" ]; then
