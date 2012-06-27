@@ -1,0 +1,1 @@
+mysql -uroot -predhat etherpadlite -e 'select store.key from store'    | grep -Eo '^pad:[^:]+'    | sed -e 's/pad://'    | sort    | uniq -c    | sort -rn    | awk '{if (!=2) {print  }}'
